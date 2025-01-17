@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEZETA Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/survey-placeholder.png" alt="Survey Image" class="survey-image">
+        <h1 class="text-center">TEZETA Perfume Bottle Feedback</h1>
+        <p class="text-center">Share your thoughts on TEZETA's latest bottle design—your opinion matters to us!</p>
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="impression">1. What is your first impression of the bottle design?</label>
+                <select name="impression" id="impression" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Elegant">Elegant</option>
+                    <option value="Minimalistic">Minimalistic</option>
+                    <option value="Modern">Modern</option>
+                    <option value="Unappealing">Unappealing</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="readability">2. How would you rate the readability of the text and logo on the bottle?</label>
+                <select name="readability" id="readability" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Very clear">Very clear</option>
+                    <option value="Somewhat clear">Somewhat clear</option>
+                    <option value="Hard to read">Hard to read</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="frostedGlass">3. Do you think the frosted glass adds to the bottle's appeal?</label>
+                <select name="frostedGlass" id="frostedGlass" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Yes, it feels premium">Yes, it feels premium</option>
+                    <option value="Neutral, it’s okay">Neutral, it’s okay</option>
+                    <option value="No, it doesn’t stand out">No, it doesn’t stand out</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="capAndText">4. Does the color of the cap and text complement the overall design?</label>
+                <select name="capAndText" id="capAndText" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Yes, perfectly">Yes, perfectly</option>
+                    <option value="Somewhat, could be better">Somewhat, could be better</option>
+                    <option value="No, it feels mismatched">No, it feels mismatched</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="purchaseDecision">5. Would this design influence your decision to purchase the perfume?</label>
+                <select name="purchaseDecision" id="purchaseDecision" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Yes, I’d buy it based on the design">Yes, I’d buy it based on the design</option>
+                    <option value="Maybe, depends on the scent and price">Maybe, depends on the scent and price</option>
+                    <option value="No, the design isn’t appealing enough">No, the design isn’t appealing enough</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn">Submit Feedback</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
